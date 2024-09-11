@@ -33,14 +33,17 @@ pointBtn.addEventListener('click', function(){
 // Event listeners for operation buttons
 for (const each_btn of opBtn) {
     each_btn.addEventListener('click', ()=>{
+        const lastChar = ans.slice(-1);
+        if (isNaN(Number(lastChar))) {                
+            ans = ans.slice(0, -1);
+        }
         if (each_btn.value === '=') {
-            displayBox.innerHTML = eval(ans);
+            ans = String(eval(ans));
         }
         else {
             ans += each_btn.value;
-
-            displayBox.innerHTML = ans;
         }
+        displayBox.innerHTML = ans;
     })
 }
 
