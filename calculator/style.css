@@ -34,8 +34,8 @@
     font-size: 80px;
     border: none;
     color: black;
-    user-select: none;
-    overflow-x: hidden;
+    /* user-select: none; */
+    overflow: hidden;
 }
 .buttons {
     width: 600px;
