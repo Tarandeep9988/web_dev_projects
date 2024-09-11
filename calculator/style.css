@@ -28,7 +28,6 @@
     height: 100%;
     box-sizing: border-box;
     resize: none;
-    padding: 10px;
     display: flex;
     justify-content: right;
     align-items: center;
@@ -36,6 +35,7 @@
     border: none;
     color: black;
     user-select: none;
+    overflow-x: hidden;
 }
 .buttons {
     width: 600px;
